@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1</title>
+</head>
+
+<body>
+  <div>
+    <div class="box1 red-bg" onClick="changeBg('red')"></div>
+    <div class="box2 green-bg" onClick="changeBg('green')"></div>
+    <div class="box3 blue-bg" onClick="changeBg('blue')"></div>
+  </div>
+  <style>
+    .box1 {
+      background-color: red;
+      width: 30px;
+      height: 30px;
+      border: solid;
+      margin: 10px;
+    }
+
+    .box2 {
+      background-color: green;
+      width: 30px;
+      height: 30px;
+      border: solid;
+      margin: 10px
+    }
+
+    .box3 {
+      background-color: blue;
+      width: 30px;
+      height: 30px;
+      border: solid;
+      margin: 10px;
+    }
+  </style>
+  <script>
+    function changeBg(color) {
+      document.querySelector('body').style.background = color;
+    }
+  </script>
+</body>
+
+</html>

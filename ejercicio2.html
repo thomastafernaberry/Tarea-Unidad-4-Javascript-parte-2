@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2</title>
+</head>
+
+<body>
+
+  <textarea id="textarea"></textarea>
+  <div>Caracteres: <span id="counter"></span></div>
+
+  <script>
+    // El script no funciona. Cree mi código y no lo lograba hacer funcionar, luego revisé la clase que analizaba el ejercicio, leí y copié parte del código que se mostraba en la misma para ver en qué me estaba equivocando pero no encontré la solución.
+    var textarea = document.getElementById('textarea');
+    var counter = document.getElementsById('counter');
+
+    textarea.addEventListener('keyup', function () {
+      counter.innerText = textarea.value.length;
+    })
+  </script>
+</body>
+
+</html>
